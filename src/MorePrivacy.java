@@ -3,16 +3,21 @@
 */
 
 public class Person {
-    String name;
-    int age;
+    private String name;
+    private int age;
+
+    public Person(String name, int age){
+        this.name = name;
+        this.age = age;
+    }
+    //getters
+    public String getName() {return name;}
+    public int getAge() {return age;}
 }
 
 void main() {
-    Person p = new Person();
+    Person p = new Person("Alice", 20);
 
-    p.name = "Alice";
-    p.age = 20;
-
-    IO.println(p.name);
-    IO.println(p.age);
+    IO.println(p.getName());
+    IO.println(p.getAge());
 }
