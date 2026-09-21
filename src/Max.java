@@ -9,10 +9,9 @@ void main() {
 int max(int[] numbers) {
     int max = 0;
     for (int number : numbers) {
-        if (number < max) {
+        if (number > max) {
             max = number;
         }
     }
-
     return max;
 }
