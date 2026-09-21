@@ -18,23 +18,23 @@ enum AmericanGrade {
 
 void main() {
     int danishGrade = 10;
-    char americanGrade = convertToAmericanGrade(danishGrade);
+    AmericanGrade americanGrade = convertToAmericanGrade(danishGrade);
     IO.println("Danish grade: " + danishGrade);
     IO.println("American grade: " + americanGrade);
 }
 
-char convertToAmericanGrade(int danishGrade) {
+AmericanGrade convertToAmericanGrade(int danishGrade) {
     if (danishGrade == 12) {
-        return 'A';
+        return AmericanGrade.A;
     } else if (danishGrade == 10) {
-        return 'B';
+        return AmericanGrade.B_PLUS;
     } else if (danishGrade == 7) {
-        return 'B';
+        return AmericanGrade.B;
     } else if (danishGrade == 4) {
-        return 'C';
+        return AmericanGrade.C;
     } else if (danishGrade == 2) {
-        return 'D';
+        return AmericanGrade.D;
     } else {
-        return 'F';
+        return AmericanGrade.F;
     }
 }
