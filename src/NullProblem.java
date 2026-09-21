@@ -2,13 +2,14 @@
 
 void main() {
     String name = "John Doe";
-    IO.print(name);
+    IO.println(name);
 
     String noName = null;
     IO.println(initials(noName));
 }
 
 String initials(String name) {
+    if (name == null){return "Null Value";}
     String initials = "";
     String[] parts = name.split(" ");
     
