@@ -9,9 +9,9 @@ void main() {
 }
 
 void withdraw(double amount) {
-    balance = balance - amount;
+    balance -= amount;
 }
 
 void deposit(double amount) {
-    balance = balance + amount;
+    balance += amount;
 }
