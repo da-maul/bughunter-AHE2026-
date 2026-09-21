@@ -13,21 +13,5 @@ void main() {
 }
 
 boolean isCold(int temperature) {
-    boolean cold = false;
-
-    if (temperature > 0) {
-        if (temperature < 10) {
-            cold = true;
-        } else {
-            if (temperature < 20) {
-                cold = true;
-            } else {
-                cold = false;
-            }
-        }
-    } else {
-        cold = true;
-    }
-
-    return cold;
+    return temperature > 20;
 }
