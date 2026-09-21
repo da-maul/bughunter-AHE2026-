@@ -2,10 +2,10 @@
 
 void main() {
     Person person1 = new Person("Alice", "Smith");
-    String person1FullName = person1.firstName + " " + person1.lastName;
+    String person1FullName = person1.getName();
 
     Person person2 = new Person("Bob", "Johnson");
-    String person2FullName = person2.firstName + " " + person2.lastName;
+    String person2FullName = person2.getName();
 
     IO.println("Hello " + person1FullName);
     IO.println("Hello " + person2FullName);
@@ -18,5 +18,9 @@ public class Person {
     public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public String getName(){
+        return firstName+" "+lastName;
     }
 }
