@@ -11,21 +11,6 @@ boolean isWeekend(String day) {
     boolean weekend = false;
 
     switch (day) {
-        case "Mandag":
-            weekend = false;
-            break;
-        case "Tirsdag":
-            weekend = false;
-            break;
-        case "Onsdag":
-            weekend = false;
-            break;
-        case "Torsdag":
-            weekend = false;
-            break;
-        case "Fredag":
-            weekend = false;
-            break;
         case "Lørdag":
             weekend = true;
             break;
